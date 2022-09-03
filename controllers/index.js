@@ -1,7 +1,7 @@
 function getDataProduct() {
     var promise = axios({
-        url: 'https://shop.cyberlearn.vn/api/Product',
-        method: 'GET',
+        url:'https://shop.cyberlearn.vn/api/Product',
+        method:'GET',
     })
 
     //scuess
@@ -23,8 +23,8 @@ window.onload = function () {
 function renderProduct(arrProduct) {
     var innerHtml = '';
     //console.log(arrProduct);
-    for(var i = 0; i < arrProduct.length; i++){
-        var product = arrProduct[i];
+    for(var i = 0; i < arrProduct.content.length; i++){
+        var product = arrProduct.content[i];
         innerHtml += `
         <div class="col-lg-4 col-md-6 col-sm-6 card_product">
             <div class="card">
