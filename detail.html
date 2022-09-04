@@ -27,7 +27,7 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/index.min.css" />
+        <link rel="stylesheet" href="./css/detail.min.css" />
     </head>
 
     <body>
@@ -55,79 +55,30 @@
             <a href="">Kid</a>
             <a href="">Sport</a>
         </section>
-        <section class="carousel">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="image d-block"></div>
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="carousel-left col-xxl-9 col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                                    <img src="./assets/img/image 4.png" alt="" />
-                                </div>
-                                <div class="carousel-right col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sx-12 text-danger">
-                                    <h2>Product Name</h2>
-                                    <p>Product description ...</p>
-                                    <button>Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
+        <div class="detail">
+            <div class="container">
+                <div id="renderDetailProduct" class="row">
+                    <div class="col-sm-6 detail-left">
+                        <img src="./assets/img/image 5.png" alt="">
                     </div>
-                    <div class="carousel-item">
-                        <div class="image d-block"></div>
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="carousel-left col-xxl-9 col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                                    <img src="./assets/img/image 4.png" alt="" />
-                                </div>
-                                <div class="carousel-right col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sx-12 text-danger">
-                                    <h2>Product Name</h2>
-                                    <p>Product description ...</p>
-                                    <button>Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-sm-6 detail-right">
+                        <h2>Product Name</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores pariatur sequi esse ducimus veritatis aspernatur totam inventore, tempore rem impedit illum qui a quae aperiam officiis, error repellat sunt nulla! ( Thuộc tính Description)</p>
+                        <h6>Available size</h6>
+                        <button>38</button>
+                        <button>39</button>
+                        <button>40</button>
+                        <button>41</button>
+                        <button>42</button>
+                        <h5>85$</h5>
+                        <button class="minus adjust">-</button>
+                        <span class="num">1</span>
+                        <button class="plus adjust">+</button>
+                        <button class="add">Add to cart</button>
                     </div>
-                    <div class="carousel-item">
-                        <div class="image d-block"></div>
-                        <div class="carousel-caption">
-                            <div class="row">
-                                <div class="carousel-left col-xxl-9 col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                                    <img src="./assets/img/image 4.png" alt="" />
-                                </div>
-                                <div class="carousel-right col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sx-12 text-danger">
-                                    <h2>Product Name</h2>
-                                    <p>Product description ...</p>
-                                    <button>Buy Now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                  
                 </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev"
-                >
-                    <span class="" aria-hidden="true"
-                        ><img src="./assets/img/Polygon 2.png" alt=""
-                    /></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next"
-                >
-                    <span class="" aria-hidden="true"
-                        ><img src="./assets/img/Polygon 1.png" alt=""
-                    /></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </section>
+        </div>
         <section class="product">
             <h2>-Product Feature-</h2>
             <div class="container">
@@ -273,9 +224,13 @@
             crossorigin="anonymous"
         ></script>
 
+        <!-- Axios Library  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
         <script src="./controllers/index.js"></script>
 
-        
+        <script src="./controllers/detail.js"></script>
+
 
         <script>
             var mybutton = document.getElementById('backToTop');
@@ -297,8 +252,5 @@
                 document.documentElement.scrollTop = 0
             }
         </script>
-
-        <!-- Axios Library  -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>

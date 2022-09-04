@@ -33,7 +33,7 @@ function renderProduct(arrProduct) {
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">${product.shortDescription}</p>
                     <div class="buy d-flex">
-                        <button>Buy now</button>
+                        <button onclick="location.href='../detail.html?productId=${product.id}'">Buy now</button>
                         <span>${product.price}</span>
                     </div>
                 </div>
