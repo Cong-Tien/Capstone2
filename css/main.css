@@ -76,6 +76,14 @@ button:hover {
     opacity: 0;
   }
 }
+.error {
+  border: 3px solid #e74c3c !important;
+}
+
+.none-border {
+  border: none !important;
+}
+
 .header header {
   background-color: #000000;
 }
@@ -483,6 +491,12 @@ form .left {
   width: 50%;
   margin-right: 20px;
 }
+form .left .errormess {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 @media (max-width: 600px) {
   form .left {
     width: 40%;
@@ -494,8 +508,6 @@ form .left {
   }
 }
 form .left input {
-  border: none;
-  border-bottom: 3px solid #AE18E2;
   margin: 0 0 30px 0;
   width: 80%;
   font-size: 30px;

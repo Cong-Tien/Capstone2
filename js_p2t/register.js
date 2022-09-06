@@ -7,11 +7,11 @@ document.querySelector('#submit').onclick=function() {
     user.phone= document.querySelector('#phone').value;
 
     console.log(user.gender,user);
-    var promise = axios({
-        url:'https://shop.cyberlearn.vn/api/Users/signup',
-        method:'POST',
-        data:user
-    });
+    // var promise = axios({
+    //     url:'https://shop.cyberlearn.vn/api/Users/signup',
+    //     method:'POST',
+    //     data:user
+    // });
     promise.then(function(result){
         console.log(result.data.content);
         alert('successfull')

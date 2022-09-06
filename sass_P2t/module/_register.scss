@@ -17,6 +17,12 @@ form {
     justify-content:center;
 
     .left{
+        .errormess{
+            color: #e74c3c;
+	        position: absolute;
+	        bottom: 0;
+	        left: 0;
+        }
         @include respond(phone){
             width: calc(100% /2.5);
         }
@@ -26,8 +32,8 @@ form {
         width: calc(100% /2);
         margin-right:20px;
         input{
-            border:none;
-            border-bottom: 3px solid #AE18E2;
+            // border:none;
+            // border-bottom: 3px solid #AE18E2;
             margin: 0 0 30px 0;
             width: 80%;
             font-size: 30px;
