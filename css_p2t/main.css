@@ -454,6 +454,7 @@ form .left {
   }
 }
 form .left input {
+  border: none;
   border-bottom: 3px solid #AE18E2;
   margin: 0 0 30px 0;
   width: 80%;
@@ -534,10 +535,4 @@ form .right .block {
   display: block;
   line-height: 36px;
   font-weight: 400;
-}
-.error{
-  border:1px solid #cd4c4c;
-}
-.non-border{
-  border:none;
 }
