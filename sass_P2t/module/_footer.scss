@@ -1,0 +1,68 @@
+.footer{
+    #Top{
+        position: fixed;
+        bottom:20px;
+        right: 10px;
+        border-radius: 40%;
+        width:50px;
+        height:50px;
+        cursor: pointer;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-property: background-color,color;
+    }
+    .above{
+        padding: 30px 50px;
+            @include respond(phone){
+                padding: 0;
+            }
+    }
+    .row{
+        @include flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        .infor{
+            padding:0 30px;
+            border-right: 1px solid #edeaea;
+            h2{
+                font-size: 20px;
+                font-weight: 800;
+            }
+            
+            a{
+                display: block;
+            }
+        }
+        .register, .your{
+            h2{
+                font-size: 20px;
+                font-weight: 800;
+            }
+            a{
+                color: #cd4c4c;
+                font-size: 15px;
+            }
+            padding:0 30px;
+        }
+        .col{
+            flex: 0 0 auto;
+            width: 33.33333333%;
+        }
+    }
+    .bottom{
+        @include respond(phone){
+            padding: 0;
+            margin-top:20px;
+        }
+        background-color: #ede9e9;
+        a{
+            color: #cd4c4c;
+            font-size: 15px;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 800;
+        }
+        padding: 30px 50px;
+    }
+}

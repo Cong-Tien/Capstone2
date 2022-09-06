@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../newcapstone/js_p2t"
+		},
+		{
+			"path": "../../../newcapstone/model"
+		},
+		{
+			"path": "../../../newcapstone/modules"
+		},
+		{
+			"path": "../../../newcapstone/sass_P2t"
+		},
+		{
+			"path": "../../../newcapstone/assets"
+		},
+		{
+			"path": "../../../newcapstone/css_p2t"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Capstone2-main"
+	}
+}

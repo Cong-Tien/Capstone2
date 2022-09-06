@@ -1,0 +1,35 @@
+@mixin flex { 
+    display: flex;
+    flex-direction: row;
+}
+@mixin title-style{
+    font-weight: 300;
+    font-size: 30px;
+}
+@mixin text-content {
+    font-size: 16px;
+    
+}
+@mixin  heading-text {
+    font-weight: 300;
+    font-size: 24px;
+    
+}
+@mixin none-border{
+    border: none;
+}
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone{
+        @media (max-width:600px){@content};
+    }
+    @if $breakpoint == tab-port{
+        @media (max-width:900px){@content};
+    }
+    @if $breakpoint == tab-land{
+        @media (max-width:1000px){@content};
+    }
+    @if $breakpoint == big-desktop{
+        @media (max-width:1800px){@content};
+    }
+}

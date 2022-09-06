@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+}
+.container{
+    max-width: 2040px;
+    margin: 0 auto;
+}
+.container-fluid{
+    
+    max-width:1022px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;   
+    color: $text-color-1;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+    li{
+        text-decoration: none;   
+    }
+}
+
+.row{
+    a{
+        color:$text-color-2;
+    }
+}
+
+button{
+    &:hover{
+        cursor: pointer;
+    }
+}
+.btnEntrance{
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name:btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from{
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.btnExit{
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name:btnExit;
+}
+@keyframes btnExit {
+    from{
+        opacity: 1;
+        transform: scale3d(0.3,0.3,0.3);
+    }
+    to{
+        opacity: 0;
+    }
+}
+

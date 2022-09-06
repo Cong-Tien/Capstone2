@@ -1,0 +1,105 @@
+
+/*register*/
+
+.title{
+    h2{
+        margin: 50px;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+form {
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    display:flex;
+    justify-content:center;
+
+    .left{
+        @include respond(phone){
+            width: calc(100% /2.5);
+        }
+        @include respond(tab-port){
+            width: calc(100% /2.5);
+        }
+        width: calc(100% /2);
+        margin-right:20px;
+        input{
+            border:none;
+            border-bottom: 3px solid #AE18E2;
+            margin: 0 0 30px 0;
+            width: 80%;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 400;
+            color:black !important;
+        }
+        .block{
+            display: block;
+        }
+    }
+    .right{
+        @include respond(phone){
+            width: calc(100% /2.5);
+        }
+        @include respond(tab-port){
+            width: calc(100% /2.5);
+        }
+        width: calc(100% /2);
+        
+        label{
+            padding-right: 40px;
+            div{
+                @include respond(phone){
+                    display:block;
+                    font-size:60%;
+                    margin:0;
+                }
+                @include respond(tab-port){
+                    display: block;
+                    font-size:60%;
+                    margin:0;
+                }
+                display: inline;
+                margin-left:60px;
+                input{
+                    color:black !important;
+                    margin:10px;
+                    accent-color: #AE18E2;
+                }
+                
+            }
+            button{
+                font-size: 30px;
+                border: none;
+                padding: 10px 87px;
+                background: #AE18E2;
+                color: #ffff;
+                margin: 60px 0 0 0; 
+                transition: all 1s ease-in-out;
+                &:hover{
+                    background: #ffff;
+                    color: #AE18E2;
+                    border: 1px solid #AE18E2;
+                }
+                @include respond(phone){
+                    font-size:60%;
+                    padding: 10px 40px;
+                    margin: 10px 0;
+                }
+            }
+        }
+        .block{
+            margin: 0 0 30px 0;
+            font-size: 30px;
+            border:none;
+            border-bottom: 3px solid #AE18E2;
+            width: 80%;
+            display: block;
+            line-height: 36px;
+            font-weight: 400;
+        }
+    }
+}
+    

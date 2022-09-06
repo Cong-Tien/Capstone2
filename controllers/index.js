@@ -30,10 +30,10 @@ function renderProduct(arrProduct) {
             <div class="card">
                 <img src="${product.image}" class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
+                    <h5 class="card-title" onclick="location.href='/detail_pro.html?productId=${product.id}'>${product.name}</h5>
                     <p class="card-text">${product.shortDescription}</p>
                     <div class="buy d-flex">
-                        <button onclick="location.href='../detail.html?productId=${product.id}'">Buy now</button>
+                        <button onclick="location.href='/detail_pro.html?productId=${product.id}'">Buy now</button>
                         <span>${product.price}</span>
                     </div>
                 </div>
