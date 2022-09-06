@@ -86,13 +86,13 @@ function renderProduct(arrProduct) {
             <div class="prod-box">
                 <div class="pro-infor">
                     <img src="${product.image}" alt="" />
-                    <a onclick="location.href='/Capstone2/detail_pro.html?productId=${product.id}'" href="/Capstone2/detail_pro.html?productId=${product.id}">
+                    <a onclick="location.href='/detail_pro.html?productId=${product.id}'" href="/detail_pro.html?productId=${product.id}">
                         <p>${product.name}</p>
                     </a>
                     <span>${product.shortDescription}</span>
                 </div>
                 <div class="pro-btn">
-                    <button onclick="location.href='/Capstone2/detail_pro.html?productId=${product.id}'">Buy now</button>
+                    <button onclick="location.href='/detail_pro.html?productId=${product.id}'">Buy now</button>
                     <span>${product.price}</span>
                 </div>
             </div>
